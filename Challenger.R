@@ -1,0 +1,16 @@
+dat <- read.csv("C:/Users/lj015625/Desktop/ML Class/Data/challenger_data.csv")
+attach(dat)
+names(dat)
+dim(dat)
+summary(dat)
+library(psych)
+describe(dat)
+plot(temp, oring_failures)
+cor(temp, oring_failures)
+REGMODEL1 <- lm(oring_failures~temp)
+summary(REGMODEL1)
+anova(REGMODEL1)
+fitted(REGMODEL1)
+abline(REGMODEL1)
+
+
